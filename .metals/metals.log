@@ -1,0 +1,67 @@
+2024.11.11 08:28:35 INFO  Started: Metals version 1.3.5 in folders '/Users/stsagarino/Desktop/sht' for client Sublime Text LSP 2.2.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@4fbd651c]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2a1726e9]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@4fbd651c]
+2024.11.11 08:28:36 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.11.11 08:28:36 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:40 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:41 WARN  Build server is not auto-connectable.
+2024.11.11 08:28:41 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:41 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:41 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:41 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:41 WARN  no build target for: /Users/stsagarino/Desktop/sht/api/build.sbt
+2024.11.11 08:28:41 INFO  Detected new build tool in /Users/stsagarino/Desktop/sht
+2024.11.11 08:28:41 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:41 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:42 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:28:45 INFO  running '/Users/stsagarino/.asdf/installs/java/corretto-21.0.4.7.1/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/3k/q46d751n54dgkdd_z5m2rk4h0000gp/T/metals947260380039845751/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.11.11 08:28:58 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:01 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:01 INFO  time: code lens generation in 20s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 8.53s
+2024.11.11 08:29:06 INFO  time: code lens generation in 24s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 9.34s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 24s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 25s
+2024.11.11 08:29:06 INFO  time: code lens generation in 8.44s
+2024.11.11 08:29:10 INFO  [info] welcome to sbt 1.10.3 (Amazon.com Inc. Java 21.0.4)
+2024.11.11 08:29:21 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:21 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:21 WARN  no build target for: /Users/stsagarino/Desktop/sht/api/build.sbt
+2024.11.11 08:29:21 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:24 INFO  [info] loading settings for project api-build-build-build from metals.sbt ...
+2024.11.11 08:29:30 INFO  [info] loading project definition from /Users/stsagarino/Desktop/sht/api/project/project/project
+2024.11.11 08:29:38 INFO  [info] loading settings for project api-build-build from metals.sbt ...
+2024.11.11 08:29:38 INFO  [info] loading project definition from /Users/stsagarino/Desktop/sht/api/project/project
+2024.11.11 08:29:45 INFO  [success] Generated .bloop/api-build-build.json
+2024.11.11 08:29:45 INFO  [success] Total time: 7 s, completed Nov 11, 2024, 8:29:45 AM
+2024.11.11 08:29:48 INFO  [info] loading settings for project api-build from metals.sbt,plugins.sbt ...
+2024.11.11 08:29:48 INFO  [info] loading project definition from /Users/stsagarino/Desktop/sht/api/project
+2024.11.11 08:29:51 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:51 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:29:54 INFO  [success] Generated .bloop/api-build.json
+2024.11.11 08:29:54 INFO  [success] Total time: 6 s, completed Nov 11, 2024, 8:29:54 AM
+2024.11.11 08:29:55 INFO  Shutting down server
+2024.11.11 08:29:55 INFO  shutting down Metals
