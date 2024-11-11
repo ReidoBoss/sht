@@ -1,9 +1,9 @@
-Stories:
-1. as a user i can add a habit
+Backend Stories:
+✅1. as a user i can add a habit
    - name
    - goal (optional)
    - is completed
-   - date completed
+   - date
 2. my habits should be displayed in the list of habits
 3. my habits should reset daily
 4. i can uncheck and uncheck my habits to know if it is completed or not

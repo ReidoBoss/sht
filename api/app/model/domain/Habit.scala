@@ -1,4 +1,4 @@
-package domain.task
+package domain.habit
 import java.util.{ UUID , Date}
 import play.api.libs.json._
 import play.api.data._
@@ -8,16 +8,13 @@ case class Habit(
   name: String,
   goal: String,
   isCompleted:Boolean,
-  date: Date = new Date(),
   id: UUID = UUID.randomUUID()
 ) {
 
   def toJson = Json.obj(
-    "id" -> id,
     "name" -> name,
     "goal" -> goal,
-    "isCompleted" -> isCompleted,
-    "date" -> date,
+    "isCompleted" -> isCompleted
   )
 }
 
@@ -50,3 +47,13 @@ val taskForm = Form(
     "isCompleted" -> boolean
   )(Habit.apply)(Habit.unapply)
 )
+
+case class HabitHistory(
+  idHabit:UUID,
+  date:Date
+)
+
+object HabitHistory {
+  given Format[HabitHistory] = Json.format[HabitHistory]
+}
+
