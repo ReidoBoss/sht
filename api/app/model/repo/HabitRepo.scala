@@ -27,9 +27,9 @@ class HabitRepo @Inject()(dcp: DatabaseConfigProvider) {
     def id = column[UUID]("ID", O.PrimaryKey)
     def name = column[String]("NAME")
     def goal = column[String]("GOAL")
-    def isDone = column[Boolean]("IS_DONE")
+    // def isDone = column[Boolean]("IS_DONE")
     // def date = column[UtilDate]("DATE", O.SqlType("DATE"))
-    def * = (name,goal,isDone,id).mapTo[Habit]
+    def * = (name,goal,id).mapTo[Habit]
   }
 
   val habits = TableQuery[HabitTable]

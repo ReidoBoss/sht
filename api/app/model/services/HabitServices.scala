@@ -21,7 +21,7 @@ class HabitServices @Inject() (habitRepo:HabitRepo)(using ExecutionContext) {
       result <- existingName match {
         case Some(_) => Future(HABIT_ALREADY_EXIST)
           case None => habitRepo.add ( habit ) map {
-            case 1 => ADD_HABIT
+            case 1 => ADD_HABIT(habit.id)
             case _ => ADD_HABIT_FAILED
         }
       }

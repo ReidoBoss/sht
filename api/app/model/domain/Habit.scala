@@ -7,14 +7,12 @@ import play.api.data.Forms._
 case class Habit(
   name: String,
   goal: String,
-  isCompleted:Boolean,
   id: UUID = UUID.randomUUID()
 ) {
 
   def toJson = Json.obj(
     "name" -> name,
-    "goal" -> goal,
-    "isCompleted" -> isCompleted
+    "goal" -> goal
   )
 }
 
@@ -22,17 +20,15 @@ object Habit {
 
   def apply (
     name: String,
-    goal: String,
-    isCompleted:Boolean
+    goal: String
   ) = {
-    new Habit(name,goal,isCompleted)
+    new Habit(name,goal)
   }
 
   def unapply( habit: Habit ) = {
     Some((
       habit.name,
-      habit.goal,
-      habit.isCompleted
+      habit.goal
     ))
   }
 
@@ -42,9 +38,8 @@ object Habit {
 
 val habitForm = Form(
   mapping(
-    "name" -> text,
-    "goal"  -> text,
-    "isCompleted" -> boolean
+    "name" -> nonEmptyText,
+    "goal"  -> nonEmptyText
   )(Habit.apply)(Habit.unapply)
 )
 

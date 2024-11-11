@@ -4,6 +4,7 @@ import play.api.mvc.Results._
 import play.api.libs.json._
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
+import java.util.UUID
 private def makeResult( result: Status, json:Option[JsValue] = None) = {
   json match {
     case Some(js) =>  result(js)
@@ -12,7 +13,10 @@ private def makeResult( result: Status, json:Option[JsValue] = None) = {
 }
 
 
-val ADD_HABIT = makeResult(Created)
+def ADD_HABIT(id:UUID) = makeResult(
+  Created,
+  Some(Json.obj("message" -> "Added!","id"->id.toString()))
+)
 
 def HABIT_RETRIEVE(json:JsValue) = makeResult( Ok, Some(json) )
 
