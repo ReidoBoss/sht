@@ -1,27 +1,18 @@
 Stories:
+1. as a user i can add a habit
+   - name
+   - goal (optional)
+   - is completed
+   - date completed
+2. my habits should be displayed in the list of habits
+3. my habits should reset daily
+4. i can uncheck and uncheck my habits to know if it is completed or not
+5. display all the days that a habit was completed
+6. see a streak of how much ive been doing that habit
+7. as a user i can delete a habit
 
-
-
-
-Features:
-1. Add Habit:
-   •  Users should be able to add a habit with a name and optionally a goal (e.g., drink 8 glasses of water).
-   •  After submitting the form, the habit should be saved in the database and displayed in the list of habits.
-2. Track Habit:
-   •  Each habit should have a checkbox to mark it as completed for the day.
-   •  The habit’s progress should reset daily (e.g., each morning, all checkboxes are unchecked).
-3. View Habit Progress:
-   •  Display the total number of days the habit has been completed (tracked daily).
-   •  Allow users to see a streak (how many consecutive days they’ve completed the habit).
-4. Delete Habit:
-   •  Each habit in the list should have a delete button.
-   •  When the user clicks the delete button, the habit should be removed from the list.
-5. UI Details:
-  5.1.   Home Page:
-     •   Display a list of habits, showing their name, goal, and a checkbox to mark them as completed for the day.
-     •   Include a form to create new habits with fields for name and goal.
-   5.2.  Habit Tracking:
-     •   Each habit should have a checkbox to mark it as completed for the day. Reset all checkboxes daily.
-     •   Display a count of how many days the habit has been completed.
-   5.3.  Habit Streaks:
-     •   Display a streak counter that shows how many consecutive days the user has completed the habit.
+UI Stories:
+1. as a user i can see a form to add a new habit with fields for name and goal
+2. as a user i can see a list of habits with their name, goal and a checkbox to mark them as completed for the day.
+3. count of days the habit has been completed
+4. count of streak the current habit has

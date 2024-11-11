@@ -111,3 +111,60 @@ scala.meta.internal.metals.ScalafixProvider$ScalafixRunException: SemanticDB not
 	at java.lang.Thread.run(Thread.java:1583)
 
 2024.11.11 08:34:02 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.11.11 08:34:44 WARN  org.h2.jdbc.JdbcBatchUpdateException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_3 ON PUBLIC.TOPLEVEL_SYMBOL(JAR, PATH, SYMBOL) VALUES ( /* key:18575 */ 99, '/org/scalatest/enablers/TableAsserting.scala', 'org/scalatest/enablers/ForResult#')"; SQL statement:
+insert into toplevel_symbol (symbol, path, jar) values (?, ?, ?) [23505-230]
+	at org.h2.jdbc.JdbcPreparedStatement.executeBatch(JdbcPreparedStatement.java:1277)
+	at scala.meta.internal.metals.JarTopLevels.putToplevels(JarTopLevels.scala:139)
+	at scala.meta.internal.metals.JarTopLevels.$anonfun$putJarIndexingInfo$1(JarTopLevels.scala:85)
+	at scala.runtime.java8.JFunction1$mcII$sp.apply(JFunction1$mcII$sp.scala:17)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.JarTopLevels.putJarIndexingInfo(JarTopLevels.scala:84)
+	at scala.meta.internal.metals.Indexer.addSourceJarSymbols(Indexer.scala:666)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$5(Indexer.scala:491)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:905)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$1(Indexer.scala:482)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexDependencySources$1$adapted(Indexer.scala:481)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at scala.meta.internal.metals.Indexer.indexDependencySources(Indexer.scala:481)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$17(Indexer.scala:302)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$16(Indexer.scala:295)
+	at scala.meta.internal.metals.Indexer.$anonfun$indexWorkspace$16$adapted(Indexer.scala:291)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Indexer.indexWorkspace(Indexer.scala:291)
+	at scala.meta.internal.metals.Indexer.$anonfun$profiledIndexWorkspace$2(Indexer.scala:167)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.Indexer.$anonfun$profiledIndexWorkspace$1(Indexer.scala:167)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2024.11.11 08:34:58 INFO  time: indexed workspace in 1m15s
+2024.11.11 08:34:58 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 08:35:01 WARN  javac exited with exit code -1
+2024.11.11 08:35:01 INFO  time: compiled root in 2.86s
+2024.11.11 08:35:01 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 08:35:03 WARN  javac exited with exit code -1
+2024.11.11 08:35:03 INFO  time: compiled root in 1.66s
+2024.11.11 08:35:09 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:35:12 WARN  javac exited with exit code -1
+2024.11.11 08:35:12 INFO  time: compiled root in 2.08s
+2024.11.11 08:35:12 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:35:15 WARN  javac exited with exit code -1
+2024.11.11 08:35:15 INFO  time: compiled root in 2.99s
+2024.11.11 08:49:14 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.11.11 08:49:15 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.11.11 08:49:15 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.11.11 08:49:17 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.11.11 08:49:17 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.11.11 08:49:22 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
