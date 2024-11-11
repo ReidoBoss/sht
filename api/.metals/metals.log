@@ -662,3 +662,389 @@ SEVERE: A severe compiler error occurred, full details of the error can be found
 2024.11.11 14:39:22 INFO  compiling root (11 scala sources and 1 java source)
 2024.11.11 14:39:24 WARN  javac exited with exit code -1
 2024.11.11 14:39:24 INFO  time: compiled root in 1.76s
+2024.11.11 15:39:21 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:23 INFO  time: compiled root in 1.48s
+2024.11.11 15:39:23 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:24 INFO  time: compiled root in 1.09s
+2024.11.11 15:39:25 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:27 WARN  javac exited with exit code -1
+2024.11.11 15:39:27 INFO  time: compiled root in 2.39s
+2024.11.11 15:39:27 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:29 WARN  javac exited with exit code -1
+2024.11.11 15:39:29 INFO  time: compiled root in 1.94s
+2024.11.11 15:39:33 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:34 WARN  javac exited with exit code -1
+2024.11.11 15:39:34 INFO  time: compiled root in 1.35s
+2024.11.11 15:39:34 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:36 WARN  javac exited with exit code -1
+2024.11.11 15:39:36 INFO  time: compiled root in 1.62s
+2024.11.11 15:39:36 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:39:41 WARN  javac exited with exit code -1
+2024.11.11 15:39:41 INFO  time: compiled root in 3.87s
+2024.11.11 15:45:40 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:45:43 WARN  javac exited with exit code -1
+2024.11.11 15:45:43 INFO  time: compiled root in 3.04s
+2024.11.11 15:45:45 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:45:47 WARN  javac exited with exit code -1
+2024.11.11 15:45:47 INFO  time: compiled root in 2.22s
+2024.11.11 15:45:49 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:45:51 WARN  javac exited with exit code -1
+2024.11.11 15:45:51 INFO  time: compiled root in 1.76s
+2024.11.11 15:46:04 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:46:06 WARN  javac exited with exit code -1
+2024.11.11 15:46:06 INFO  time: compiled root in 1.61s
+2024.11.11 15:46:12 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:46:14 WARN  javac exited with exit code -1
+2024.11.11 15:46:14 INFO  time: compiled root in 1.39s
+2024.11.11 15:46:27 INFO  compiling root (11 scala sources and 1 java source)
+Nov 11, 2024 3:46:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7487
+2024.11.11 15:46:29 WARN  javac exited with exit code -1
+2024.11.11 15:46:29 INFO  time: compiled root in 1.97s
+2024.11.11 15:46:29 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:46:31 WARN  javac exited with exit code -1
+2024.11.11 15:46:31 INFO  time: compiled root in 1.5s
+2024.11.11 15:46:59 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:47:01 WARN  javac exited with exit code -1
+2024.11.11 15:47:01 INFO  time: compiled root in 1.26s
+2024.11.11 15:47:11 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:47:13 WARN  javac exited with exit code -1
+2024.11.11 15:47:13 INFO  time: compiled root in 1.77s
+Nov 11, 2024 3:47:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/api/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_15-47-21-640.md
+Nov 11, 2024 3:47:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7724
+2024.11.11 15:47:30 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:47:33 INFO  time: compiled root in 2.38s
+2024.11.11 15:47:33 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:47:35 INFO  time: compiled root in 1.98s
+2024.11.11 15:47:49 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:47:49 INFO  time: compiled root in 0.9s
+2024.11.11 15:48:12 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:48:12 INFO  time: compiled root in 0.82s
+2024.11.11 15:48:32 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:48:32 INFO  time: compiled root in 0.66s
+Nov 11, 2024 3:48:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7969
+2024.11.11 15:48:37 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:48:39 WARN  javac exited with exit code -1
+2024.11.11 15:48:39 INFO  time: compiled root in 2.3s
+2024.11.11 15:48:39 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:48:42 WARN  javac exited with exit code -1
+2024.11.11 15:48:42 INFO  time: compiled root in 1.5s
+Nov 11, 2024 3:49:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/api/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_15-49-06-237.md
+2024.11.11 15:49:28 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:49:30 WARN  javac exited with exit code -1
+2024.11.11 15:49:30 INFO  time: compiled root in 2.76s
+2024.11.11 15:49:30 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:49:33 INFO  time: compiled root in 2.52s
+2024.11.11 15:50:07 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:50:12 INFO  time: compiled root in 4.89s
+2024.11.11 15:50:12 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:50:15 INFO  time: compiled root in 2.74s
+2024.11.11 15:50:28 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 15:50:32 WARN  javac exited with exit code -1
+2024.11.11 15:50:32 INFO  time: compiled root in 3.39s
+2024.11.11 16:12:43 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:12:47 WARN  javac exited with exit code -1
+2024.11.11 16:12:47 INFO  time: compiled root in 3.85s
+2024.11.11 16:13:34 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:13:36 WARN  javac exited with exit code -1
+2024.11.11 16:13:36 INFO  time: compiled root in 2.14s
+2024.11.11 16:14:39 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:14:41 WARN  javac exited with exit code -1
+2024.11.11 16:14:41 INFO  time: compiled root in 1.9s
+2024.11.11 16:14:44 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:14:45 WARN  javac exited with exit code -1
+2024.11.11 16:14:45 INFO  time: compiled root in 1.42s
+2024.11.11 16:14:52 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:14:53 WARN  javac exited with exit code -1
+2024.11.11 16:14:53 INFO  time: compiled root in 1.34s
+2024.11.11 16:15:00 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:15:01 WARN  javac exited with exit code -1
+2024.11.11 16:15:01 INFO  time: compiled root in 1.53s
+2024.11.11 16:15:08 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:15:12 INFO  time: compiled root in 4.36s
+2024.11.11 16:15:28 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:15:30 INFO  time: compiled root in 2.05s
+2024.11.11 16:15:59 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:04 WARN  javac exited with exit code -1
+2024.11.11 16:16:04 INFO  time: compiled root in 5.55s
+2024.11.11 16:16:04 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:07 ERROR Unable to run scalafix, please check logs for more info.
+java.io.UncheckedIOException: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/.metals/.tmp/app
+	at java.nio.file.Files$2.hasNext(Files.java:3783)
+	at java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1949)
+	at java.util.Spliterators$1Adapter.hasNext(Spliterators.java:681)
+	at scala.collection.convert.JavaCollectionWrappers$JIteratorWrapper.hasNext(JavaCollectionWrappers.scala:46)
+	at geny.Generator$SelfClosing.generate(Generator.scala:233)
+	at geny.Generator$Mapped.generate(Generator.scala:288)
+	at geny.Generator$Sliced.generate(Generator.scala:341)
+	at geny.Generator.foreach(Generator.scala:49)
+	at geny.Generator.foreach$(Generator.scala:49)
+	at geny.Generator$Sliced.foreach(Generator.scala:337)
+	at geny.Generator.toBuffer(Generator.scala:132)
+	at geny.Generator.toBuffer$(Generator.scala:130)
+	at geny.Generator$Sliced.toBuffer(Generator.scala:337)
+	at geny.Generator.toVector(Generator.scala:140)
+	at geny.Generator.toVector$(Generator.scala:140)
+	at geny.Generator$Sliced.toVector(Generator.scala:337)
+	at geny.Generator.toSeq(Generator.scala:137)
+	at geny.Generator.toSeq$(Generator.scala:137)
+	at geny.Generator$Sliced.toSeq(Generator.scala:337)
+	at geny.Generator.headOption(Generator.scala:129)
+	at geny.Generator.headOption$(Generator.scala:129)
+	at geny.Generator$Mapped.headOption(Generator.scala:286)
+	at scala.meta.internal.metals.MetalsEnrichments$.scala$meta$internal$metals$MetalsEnrichments$$deleteEmptyParents(MetalsEnrichments.scala:693)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.deleteWithEmptyParents(MetalsEnrichments.scala:676)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$12(ScalafixProvider.scala:428)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$12$adapted(ScalafixProvider.scala:426)
+	at scala.Option.foreach(Option.scala:437)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$11(ScalafixProvider.scala:426)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/.metals/.tmp/app
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at sun.nio.fs.UnixException.asIOException(UnixException.java:115)
+	at sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.readNextEntry(UnixDirectoryStream.java:168)
+	at sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.hasNext(UnixDirectoryStream.java:198)
+	at java.nio.file.Files$2.hasNext(Files.java:3781)
+	at java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1949)
+	at java.util.Spliterators$1Adapter.hasNext(Spliterators.java:681)
+	at scala.collection.convert.JavaCollectionWrappers$JIteratorWrapper.hasNext(JavaCollectionWrappers.scala:46)
+	at geny.Generator$SelfClosing.generate(Generator.scala:233)
+	at geny.Generator$Mapped.generate(Generator.scala:288)
+	at geny.Generator$Sliced.generate(Generator.scala:341)
+	at geny.Generator.foreach(Generator.scala:49)
+	at geny.Generator.foreach$(Generator.scala:49)
+	at geny.Generator$Sliced.foreach(Generator.scala:337)
+	at geny.Generator.toBuffer(Generator.scala:132)
+	at geny.Generator.toBuffer$(Generator.scala:130)
+	at geny.Generator$Sliced.toBuffer(Generator.scala:337)
+	at geny.Generator.toVector(Generator.scala:140)
+	at geny.Generator.toVector$(Generator.scala:140)
+	at geny.Generator$Sliced.toVector(Generator.scala:337)
+	at geny.Generator.toSeq(Generator.scala:137)
+	at geny.Generator.toSeq$(Generator.scala:137)
+	at geny.Generator$Sliced.toSeq(Generator.scala:337)
+	at geny.Generator.headOption(Generator.scala:129)
+	at geny.Generator.headOption$(Generator.scala:129)
+	at geny.Generator$Mapped.headOption(Generator.scala:286)
+	at scala.meta.internal.metals.MetalsEnrichments$.scala$meta$internal$metals$MetalsEnrichments$$deleteEmptyParents(MetalsEnrichments.scala:693)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.deleteWithEmptyParents(MetalsEnrichments.scala:676)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$12(ScalafixProvider.scala:428)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$12$adapted(ScalafixProvider.scala:426)
+	at scala.Option.foreach(Option.scala:437)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$11(ScalafixProvider.scala:426)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+Nov 11, 2024 4:16:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.io.UncheckedIOException: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/.metals/.tmp/app
+java.util.concurrent.CompletionException: java.io.UncheckedIOException: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/.metals/.tmp/app
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.UncheckedIOException: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/.metals/.tmp/app
+	at java.base/java.nio.file.Files$2.hasNext(Files.java:3783)
+	at java.base/java.util.Spliterators$IteratorSpliterator.tryAdvance(Spliterators.java:1949)
+	at java.base/java.util.Spliterators$1Adapter.hasNext(Spliterators.java:681)
+	at scala.collection.convert.JavaCollectionWrappers$JIteratorWrapper.hasNext(JavaCollectionWrappers.scala:46)
+	at geny.Generator$SelfClosing.generate(Generator.scala:233)
+	at geny.Generator$Mapped.generate(Generator.scala:288)
+	at geny.Generator$Sliced.generate(Generator.scala:341)
+	at geny.Generator.foreach(Generator.scala:49)
+	at geny.Generator.foreach$(Generator.scala:49)
+	at geny.Generator$Sliced.foreach(Generator.scala:337)
+	at geny.Generator.toBuffer(Generator.scala:132)
+	at geny.Generator.toBuffer$(Generator.scala:130)
+	at geny.Generator$Sliced.toBuffer(Generator.scala:337)
+	at geny.Generator.toVector(Generator.scala:140)
+	at geny.Generator.toVector$(Generator.scala:140)
+	at geny.Generator$Sliced.toVector(Generator.scala:337)
+	at geny.Generator.toSeq(Generator.scala:137)
+	at geny.Generator.toSeq$(Generator.scala:137)
+	at geny.Generator$Sliced.toSeq(Generator.scala:337)
+	at geny.Generator.headOption(Generator.scala:129)
+	at geny.Generator.headOption$(Generator.scala:129)
+	at geny.Generator$Mapped.headOption(Generator.scala:286)
+	at scala.meta.internal.metals.MetalsEnrichments$.scala$meta$internal$metals$MetalsEnrichments$$deleteEmptyParents(MetalsEnrichments.scala:693)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.deleteWithEmptyParents(MetalsEnrichments.scala:676)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$12(ScalafixProvider.scala:428)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$12$adapted(ScalafixProvider.scala:426)
+	at scala.Option.foreach(Option.scala:437)
+	at scala.meta.internal.metals.ScalafixProvider.$anonfun$scalafixEvaluate$11(ScalafixProvider.scala:426)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/.metals/.tmp/app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.asIOException(UnixException.java:115)
+	at java.base/sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.readNextEntry(UnixDirectoryStream.java:168)
+	at java.base/sun.nio.fs.UnixDirectoryStream$UnixDirectoryIterator.hasNext(UnixDirectoryStream.java:198)
+	at java.base/java.nio.file.Files$2.hasNext(Files.java:3781)
+	... 31 more
+
+2024.11.11 16:16:11 INFO  time: compiled root in 6.55s
+2024.11.11 16:16:12 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:14 INFO  time: compiled root in 1.85s
+2024.11.11 16:16:30 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:32 INFO  time: compiled root in 1.51s
+2024.11.11 16:16:34 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:36 WARN  javac exited with exit code -1
+2024.11.11 16:16:36 INFO  time: compiled root in 1.85s
+2024.11.11 16:16:51 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:54 INFO  time: compiled root in 2.74s
+2024.11.11 16:16:55 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:16:57 WARN  javac exited with exit code -1
+2024.11.11 16:16:57 INFO  time: compiled root in 1.67s
+2024.11.11 16:17:01 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:04 INFO  time: compiled root in 2.52s
+2024.11.11 16:17:06 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:07 INFO  time: compiled root in 1.82s
+2024.11.11 16:17:20 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:22 WARN  javac exited with exit code -1
+2024.11.11 16:17:22 INFO  time: compiled root in 1.63s
+2024.11.11 16:17:24 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:27 INFO  time: compiled root in 3s
+2024.11.11 16:17:27 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:28 WARN  javac exited with exit code -1
+2024.11.11 16:17:28 INFO  time: compiled root in 1.51s
+2024.11.11 16:17:36 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:38 WARN  javac exited with exit code -1
+2024.11.11 16:17:38 INFO  time: compiled root in 1.36s
+2024.11.11 16:17:55 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:56 WARN  javac exited with exit code -1
+2024.11.11 16:17:56 INFO  time: compiled root in 1.43s
+2024.11.11 16:17:56 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:17:57 WARN  javac exited with exit code -1
+2024.11.11 16:17:57 INFO  time: compiled root in 1.42s
+2024.11.11 16:18:01 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:18:03 WARN  javac exited with exit code -1
+2024.11.11 16:18:03 INFO  time: compiled root in 2.37s
+2024.11.11 16:19:35 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:19:38 INFO  time: compiled root in 3.12s
+2024.11.11 16:19:43 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:19:45 INFO  time: compiled root in 1.9s
+Nov 11, 2024 4:20:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/api/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_16-20-06-902.md
+2024.11.11 16:20:07 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:20:09 WARN  javac exited with exit code -1
+2024.11.11 16:20:09 INFO  time: compiled root in 1.96s
+2024.11.11 16:20:09 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:20:12 WARN  javac exited with exit code -1
+2024.11.11 16:20:12 INFO  time: compiled root in 2.38s
+2024.11.11 16:21:18 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:21:22 WARN  javac exited with exit code -1
+2024.11.11 16:21:22 INFO  time: compiled root in 4.39s
+2024.11.11 16:21:22 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:21:25 WARN  javac exited with exit code -1
+2024.11.11 16:21:25 INFO  time: compiled root in 3.29s
+2024.11.11 16:23:02 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:23:03 INFO  time: compiled root in 1.72s
+2024.11.11 16:23:03 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:23:06 INFO  time: compiled root in 2.16s
+2024.11.11 16:23:08 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:23:09 WARN  javac exited with exit code -1
+2024.11.11 16:23:09 INFO  time: compiled root in 1.47s
+2024.11.11 16:23:22 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:23:24 INFO  time: compiled root in 1.68s
+2024.11.11 16:23:38 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:23:43 WARN  javac exited with exit code -1
+2024.11.11 16:23:43 INFO  time: compiled root in 4.79s
+2024.11.11 16:23:55 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:23:58 WARN  javac exited with exit code -1
+2024.11.11 16:23:58 INFO  time: compiled root in 3.03s
+2024.11.11 16:38:06 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:38:13 INFO  time: compiled root in 7.37s
+2024.11.11 16:38:21 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:38:23 WARN  javac exited with exit code -1
+2024.11.11 16:38:23 INFO  time: compiled root in 2.28s
+2024.11.11 16:38:23 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:38:26 WARN  javac exited with exit code -1
+2024.11.11 16:38:26 INFO  time: compiled root in 2.47s
+2024.11.11 16:38:42 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:38:46 INFO  time: compiled root in 3.73s
+2024.11.11 16:39:03 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:39:06 INFO  time: compiled root in 3.24s
+2024.11.11 16:39:16 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:39:20 WARN  javac exited with exit code -1
+2024.11.11 16:39:20 INFO  time: compiled root in 3.79s
+2024.11.11 16:39:46 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:39:49 WARN  javac exited with exit code -1
+2024.11.11 16:39:49 INFO  time: compiled root in 2.75s
+2024.11.11 16:40:07 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:40:12 WARN  javac exited with exit code -1
+2024.11.11 16:40:12 INFO  time: compiled root in 4.36s
+2024.11.11 16:40:12 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:40:15 WARN  javac exited with exit code -1
+2024.11.11 16:40:15 INFO  time: compiled root in 3.2s
+2024.11.11 16:40:20 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:40:22 WARN  javac exited with exit code -1
+2024.11.11 16:40:22 INFO  time: compiled root in 1.89s
+2024.11.11 16:40:36 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:40:38 WARN  javac exited with exit code -1
+2024.11.11 16:40:38 INFO  time: compiled root in 1.66s
+2024.11.11 16:40:46 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:40:48 INFO  time: compiled root in 2.07s
+2024.11.11 16:41:06 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:41:08 INFO  time: compiled root in 1.79s
+2024.11.11 16:41:13 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:41:15 INFO  time: compiled root in 2.19s
+Nov 11, 2024 4:41:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9853
+Nov 11, 2024 4:41:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9967
+Nov 11, 2024 4:41:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9998
+Nov 11, 2024 4:41:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10031
+Nov 11, 2024 4:41:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10081
+2024.11.11 16:42:02 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:42:04 INFO  time: compiled root in 2.29s
+2024.11.11 16:42:17 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:42:19 INFO  time: compiled root in 2.08s
+2024.11.11 16:42:27 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:42:29 WARN  javac exited with exit code -1
+2024.11.11 16:42:29 INFO  time: compiled root in 1.94s
+2024.11.11 16:42:29 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:42:30 WARN  javac exited with exit code -1
+2024.11.11 16:42:30 INFO  time: compiled root in 1.62s
+Nov 11, 2024 4:42:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10214
+Nov 11, 2024 4:42:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10217
+2024.11.11 16:42:53 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:42:58 WARN  javac exited with exit code -1
+2024.11.11 16:42:58 INFO  time: compiled root in 4.98s
+2024.11.11 16:43:05 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:43:10 WARN  javac exited with exit code -1
+2024.11.11 16:43:10 INFO  time: compiled root in 5.62s
+2024.11.11 16:43:23 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:43:26 WARN  javac exited with exit code -1
+2024.11.11 16:43:26 INFO  time: compiled root in 3.23s
+2024.11.11 16:43:28 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:43:30 WARN  javac exited with exit code -1
+2024.11.11 16:43:30 INFO  time: compiled root in 1.8s
+2024.11.11 16:43:34 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:43:39 WARN  javac exited with exit code -1
+2024.11.11 16:43:39 INFO  time: compiled root in 4.31s
+2024.11.11 16:44:02 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:44:07 WARN  javac exited with exit code -1
+2024.11.11 16:44:07 INFO  time: compiled root in 4.76s
+2024.11.11 16:44:07 INFO  compiling root (11 scala sources and 1 java source)
+2024.11.11 16:44:08 WARN  javac exited with exit code -1
+2024.11.11 16:44:08 INFO  time: compiled root in 1.73s

@@ -27,8 +27,6 @@ class HabitRepo @Inject()(dcp: DatabaseConfigProvider) {
     def id = column[UUID]("ID", O.PrimaryKey)
     def name = column[String]("NAME")
     def goal = column[String]("GOAL")
-    // def isDone = column[Boolean]("IS_DONE")
-    // def date = column[UtilDate]("DATE", O.SqlType("DATE"))
     def * = (name,goal,id).mapTo[Habit]
   }
 
@@ -44,8 +42,20 @@ class HabitRepo @Inject()(dcp: DatabaseConfigProvider) {
     db.run(action)
   }
 
+  def getById ( id:UUID ):Future[Option[Habit]] = {
+    val action = habits.filter(_.id === id).result.headOption
+    db.run(action)
+  }
+
   def getAll: Future[Seq[Habit]] = {
     val action = habits.result
     db.run(action)
   }
+
+  def deleteById (id:UUID) = {
+    val action = habits.filter(_.id === id).delete
+    db.run(action)
+  }
+
+
 }

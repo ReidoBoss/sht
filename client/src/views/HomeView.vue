@@ -6,14 +6,17 @@
 
 <template>
   <div class="container">
-    <section class="habit-list-section">
-      <h2 class="section-title">Your Current Habits</h2>
-      <HabitContainer />
-    </section>
-    <section class="habit-form-section">
-      <h2 class="section-title">Add a New Habit</h2>
-      <HabitForm />
-    </section>
+    <div class="irrelevant">
+      <section class="habit-list-section">
+        <h2 class="section-title">Your Current Habits</h2>
+        <HabitContainer />
+      </section>
+      <section class="habit-form-section">
+        <h2 class="section-title">Add a New Habit</h2>
+        <HabitForm />
+      </section>
+    </div>
+
     <section class="habit-form-section">
       <h2 class="section-title">Your Habits today</h2>
       <HabitsToday/>
@@ -22,6 +25,10 @@
 </template>
 
 <style scoped>
+.irrelevant {
+  display: flex;
+  gap: 10px;
+}
 .container {
   display: flex;
   flex-direction: column;

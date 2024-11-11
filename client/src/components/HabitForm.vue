@@ -65,8 +65,10 @@
 </script>
 
 <style scoped>
+
+
 .toggle-form-btn {
-  background-color: #007BFF;
+  background-color: var(--color-info);
   color: white;
   border: none;
   padding: 10px 16px;
@@ -80,12 +82,8 @@
   text-align: center;
 }
 
-.toggle-form-btn:hover {
-  background-color: #0056b3;
-}
-
 .habit-form {
-  background-color: #fff;
+  background-color: var(--color-light);
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -96,12 +94,14 @@
   gap: 20px;
 }
 
+
 .form-title {
   font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--color-text);
 }
+
 
 .form-group {
   display: flex;
@@ -109,11 +109,13 @@
   gap: 8px;
 }
 
+
 .form-label {
   font-size: 1rem;
   font-weight: 600;
-  color: #444;
+  color: var(--color-muted);
 }
+
 
 .form-input {
   padding: 12px;
@@ -124,12 +126,13 @@
 }
 
 .form-input:focus {
-  border-color: #4CAF50;
+  border-color: var(--color-success);
   outline: none;
 }
 
+
 .submit-btn {
-  background-color: #4CAF50;
+  background-color: var(--color-success);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -143,6 +146,7 @@
   background-color: #45a049;
 }
 
+
 @media (max-width: 768px) {
   .habit-form {
     padding: 20px;
@@ -152,4 +156,5 @@
     font-size: 1.5rem;
   }
 }
+
 </style>

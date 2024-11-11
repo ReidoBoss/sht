@@ -12,6 +12,10 @@ private def makeResult( result: Status, json:Option[JsValue] = None) = {
   }
 }
 
+def HABIT_STREAK(streak:Int) = makeResult(
+  Ok,
+  Some(Json.obj("streak"->streak))
+)
 
 def ADD_HABIT(id:UUID) = makeResult(
   Created,
@@ -21,6 +25,11 @@ def ADD_HABIT(id:UUID) = makeResult(
 def UPDATED_HABIT = makeResult(
   Ok,
   Some(Json.obj("message" -> "updated"))
+)
+
+def DELETED_HABIT = makeResult(
+  Ok,
+  Some(Json.obj("message" -> "deleted"))
 )
 
 def HABIT_RETRIEVE(json:JsValue) = makeResult( Ok, Some(json) )
@@ -35,6 +44,11 @@ val HABIT_ALREADY_EXIST = makeResult(
 val ADD_HABIT_FAILED = makeResult(
   Conflict,
   Some(Json.obj("message" -> "Adding a habit failed"))
+)
+
+val DELETE_HABIT_FAILED = makeResult(
+  Conflict,
+  Some(Json.obj("message" -> "error deleting"))
 )
 
 val UPDATE_HABIT_FAILED = makeResult(

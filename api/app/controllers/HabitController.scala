@@ -43,4 +43,20 @@ class HabitController @Inject()(
     )
   }
 
+  def deleteById = Action(parse.json).async { implicit request =>
+    (request.body \ "id").validate[UUID]
+    .fold(
+      error => HABIT_BAD_REQUEST(Json.obj("message"->error.toString())),
+      id => habitServices.deleteById(id)
+    )
+  }
+
+  def getTotalDaysCompleted(id:UUID) = Action.async { implicit request =>
+    habitServices.getTotalDaysCompltedById(id)
+  }
+
+  def getStreakById(id:UUID) = Action.async { implicit request =>
+    habitServices.getStreakById(id)
+  }
+
 }

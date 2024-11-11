@@ -1,6 +1,9 @@
 GET     /                           controllers.HomeController.index()
 GET     /habits                     controllers.HabitController.getAll
+GET     /habit/completed/:id        controllers.HabitController.getTotalDaysCompleted(id:java.util.UUID)
+GET     /habit/streak/:id           controllers.HabitController.getStreakById(id:java.util.UUID)
 GET     /habits/today               controllers.HabitController.getToday
 POST    /habit                      controllers.HabitController.add
 
 PUT     /habit/today                controllers.HabitController.updateById
+DELETE  /habit                      controllers.HabitController.deleteById

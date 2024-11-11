@@ -29,9 +29,29 @@ class HabitServices @Inject()(
     } yield result
   }
 
+  def deleteById(id:UUID) = {
+    for {
+      habit <- habitRepo.getById(id)
+      result <- habit match {
+        case None => Future(DELETE_HABIT_FAILED)
+        case Some(habit) => habitRepo.deleteById(habit.id) map {
+          case 1 => DELETED_HABIT
+          case _ => DELETE_HABIT_FAILED
+        }
+      }
+    } yield result
+  }
+
   def getAll = {
     habitRepo.getAll map {
       case habit:Seq[Habit] => HABIT_RETRIEVE(Json.toJson(habit))
+      case null => GET_HABIT_FAILED
+    }
+  }
+
+  def getTotalDaysCompltedById(id:UUID) = {
+    historyRepo.getCompletedById(id) map {
+      case habit:Seq[HabitHistory] => HABIT_RETRIEVE(Json.toJson(habit))
       case null => GET_HABIT_FAILED
     }
   }
@@ -43,9 +63,15 @@ class HabitServices @Inject()(
     }
   }
 
+  def getStreakById(id:UUID) = {
+    historyRepo.getConsecutiveDaysCount(id) map {
+      case streak:Int =>  HABIT_STREAK(streak)
+    }
+  }
+
   def updateTodaysHabitById(id:UUID) = {
     for {
-      idNow <- historyRepo.getById(id)
+      idNow <- historyRepo.getByIdOpt(id)
       result <- idNow match {
         case Some(history) => historyRepo.updateById(id,!history.isDone) map {
           case 1 => UPDATED_HABIT
@@ -61,5 +87,6 @@ class HabitServices @Inject()(
       }
     } yield result
   }
+
 
 }

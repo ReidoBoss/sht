@@ -15,6 +15,9 @@
           <span v-if="habit.goal">{{ habit.goal }}</span>
           <span v-else>No goal</span>
         </p>
+        <button @click="deleteById(habit.id)" class="delete-button">
+          Delete
+        </button>
       </div>
     </div>
   </div>
@@ -26,6 +29,7 @@
   import useHabitStore from '@/stores/habit'
 
   const habitStore = useHabitStore()
+  const { deleteById } = habitStore
   const { habits } = storeToRefs(habitStore)
 
   const isVisible = ref(false)
@@ -36,14 +40,16 @@
 </script>
 
 <style scoped>
+
 .habit-container {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
 }
 
+
 .toggle-button {
-  background-color: #4CAF50;
+  background-color: var(--color-info);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -55,8 +61,9 @@
 }
 
 .toggle-button:hover {
-  background-color: #45a049;
+  background-color: var(--color-info);
 }
+
 
 .habit-list {
   display: flex;
@@ -66,7 +73,6 @@
   padding-bottom: 16px;
   scrollbar-width: thin;
 }
-
 
 .habit-list::-webkit-scrollbar {
   height: 8px;
@@ -81,8 +87,9 @@
   background-color: #555;
 }
 
+
 .habit-card {
-  background-color: #f9f9f9;
+  background-color: var(--color-light);
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -96,15 +103,31 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
+
 .habit-name {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #333;
+  color: var(--color-text);
 }
+
 
 .habit-goal {
   font-size: 1rem;
-  color: #555;
+  color: var(--color-muted);
+}
+
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: var(--color-danger);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background-color: var(--color-danger);
 }
 </style>

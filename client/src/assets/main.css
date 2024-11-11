@@ -1,2 +1,28 @@
 @import './base.css';
 
+
+:root {
+  --color-primary: #EF476F;
+  --color-secondary: #F78C6B;
+  --color-accent: #FFD166;
+  --color-success: #06D6A0;
+  --color-info: #118AB2;
+  --color-dark: #073B4C;
+  --color-light: #f9f9f9;
+  --color-muted: #555;
+  --color-text: #333;
+  --color-danger: #ff4c4c;
+}
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}

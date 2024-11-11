@@ -9,6 +9,7 @@ import java.sql.Date
 import slick.jdbc.JdbcType
 import slick.ast.BaseTypedType
 import slick.jdbc.PostgresProfile.api._
+import scala.concurrent.ExecutionContext
 
 @Singleton
 class HabitHistoryRepo @Inject()(dcp: DatabaseConfigProvider) {
@@ -42,8 +43,15 @@ class HabitHistoryRepo @Inject()(dcp: DatabaseConfigProvider) {
     db.run(action)
   }
 
-  def getById(id:UUID):Future[Option[HabitHistory]] = {
+  def getByIdOpt(id:UUID):Future[Option[HabitHistory]] = {
     val action = histories.filter(_.idHabit === id).result.headOption
+    db.run(action)
+  }
+
+  def getCompletedById(id:UUID):Future[Seq[HabitHistory]] = {
+    val action = histories
+      .filter( h => h.idHabit === id && h.isDone === true)
+      .result
     db.run(action)
   }
 
@@ -51,5 +59,40 @@ class HabitHistoryRepo @Inject()(dcp: DatabaseConfigProvider) {
     val action = histories.filter(_.date === date).result
     db.run(action)
   }
+
+  def getConsecutiveDaysCount(id: UUID)(using ExecutionContext): Future[Int] = {
+    val action = histories
+      .filter(h => h.idHabit === id && h.isDone === true)
+      .sortBy(h => h.date)
+      .result
+
+    db.run(action).map { histories =>
+      def countConsecutiveDays(histories: Seq[HabitHistory]): Int = {
+        histories.foldLeft((0, 0, Option.empty[UtilDate])) {
+          case ((maxCount, currentCount, lastDateOpt), habitHistory) =>
+            lastDateOpt match {
+              case Some(lastDate) if isConsecutive(lastDate, habitHistory.date) =>
+                (maxCount, currentCount + 1, Some(habitHistory.date))
+              case Some(_) =>
+                (math.max(maxCount, currentCount), 1, Some(habitHistory.date))
+              case None =>
+                (maxCount, 1, Some(habitHistory.date))
+            }
+        } match {
+          case (maxCount, currentCount, _) => math.max(maxCount, currentCount)
+        }
+      }
+
+      countConsecutiveDays(histories)
+    }
+  }
+
+  def isConsecutive(previousDate: UtilDate, currentDate: UtilDate): Boolean = {
+    val prev = previousDate.toInstant
+    val curr = currentDate.toInstant
+    val duration = java.time.Duration.between(prev, curr)
+    duration.toDays == 1
+  }
+
 
 }
