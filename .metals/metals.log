@@ -574,3 +574,19 @@ TaskRepo.scala
 2024.11.11 09:06:51 INFO  compiling root (8 scala sources and 1 java source)
 2024.11.11 09:06:53 WARN  javac exited with exit code -1
 2024.11.11 09:06:53 INFO  time: compiled root in 1.73s
+2024.11.11 09:07:23 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:07:25 WARN  javac exited with exit code -1
+2024.11.11 09:07:25 INFO  time: compiled root in 2.15s
+2024.11.11 09:08:42 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:08:42 INFO  time: compiled root in 0.45s
+2024.11.11 09:08:47 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:08:47 INFO  time: compiled root in 0.48s
+2024.11.11 09:10:51 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:10:53 INFO  time: compiled root in 2.65s
+2024.11.11 09:10:57 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:10:59 INFO  time: compiled root in 2.31s
+2024.11.11 09:11:08 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:11:10 INFO  time: compiled root in 2.25s
+2024.11.11 09:11:14 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:11:14 WARN  javac exited with exit code -1
+2024.11.11 09:11:14 INFO  time: compiled root in 0.95s
