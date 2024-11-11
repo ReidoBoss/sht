@@ -168,3 +168,359 @@ insert into toplevel_symbol (symbol, path, jar) values (?, ?, ?) [23505-230]
 2024.11.11 08:49:17 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
 2024.11.11 08:49:17 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
 2024.11.11 08:49:22 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2024.11.11 08:54:26 INFO  Shutting down server
+2024.11.11 08:54:26 INFO  shutting down Metals
+2024.11.11 08:54:26 INFO  Shut down connection with build server.
+2024.11.11 08:54:46 INFO  Started: Metals version 1.3.5 in folders '/Users/stsagarino/Desktop/sht' for client Sublime Text LSP 2.2.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@2a50680d]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@14d3befd]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@2a50680d]
+2024.11.11 08:54:47 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+Nov 11, 2024 8:54:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/stsagarino/Desktop/sht/api/app/controllers/HomeController.scala",
+      "languageId": "scala",
+      "version": 2,
+      "text": "package controllers\n\nimport javax.inject._\nimport play.api._\nimport play.api.mvc._\n\n@Singleton\nclass HController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {\n\n  def index() \u003d Action { implicit request: Request[AnyContent] \u003d\u003e\n    Ok(\"meow\")\n  }\n}\n"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.file.NoSuchFileException: /Users/stsagarino/Desktop/sht/api/app/controllers/HomeController.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:758)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:401)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.11.11 08:54:47 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:54:47 INFO  Attempting to connect to the build server...
+2024.11.11 08:54:49 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:54:49 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/app/controllers/HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:54:49 INFO  no build target found for /Users/stsagarino/Desktop/sht/api/app/controllers/HabitController.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.11.11 08:54:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/stsagarino/Desktop/sht/.metals/bsp.trace.json or /Users/stsagarino/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 08:54:50 INFO  time: Connected to build server in 2.54s
+2024.11.11 08:54:50 INFO  Connected to Build server: Bloop v1.6.0
+2024.11.11 08:54:50 INFO  time: Imported build in 0.27s
+2024.11.11 08:54:51 INFO  running doctor check
+2024.11.11 08:54:51 INFO  java targets: root-test, root
+2024.11.11 08:54:57 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:55:00 WARN  javac exited with exit code -1
+2024.11.11 08:55:00 INFO  time: compiled root in 2.77s
+2024.11.11 08:55:00 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:55:03 WARN  javac exited with exit code -1
+2024.11.11 08:55:03 INFO  time: compiled root in 2.21s
+2024.11.11 08:55:07 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.11.11 08:55:11 INFO  time: indexed workspace in 20s
+2024.11.11 08:55:11 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:55:12 WARN  javac exited with exit code -1
+2024.11.11 08:55:12 INFO  time: compiled root in 1.47s
+2024.11.11 08:55:12 INFO  compiling root (5 scala sources and 1 java source)
+exception caught when loading class Tuple9: java.lang.AssertionError: assertion failed: denotation class ScalaSignature invalid in run 3. ValidFor: Period(1..5, run = 4)
+exception caught when loading class Tuple$package: java.lang.AssertionError: assertion failed: denotation class WithPureFuns invalid in run 3. ValidFor: Period(1..5, run = 4)
+exception caught when loading class IArray$package: java.lang.AssertionError: assertion failed: denotation class WithPureFuns invalid in run 3. ValidFor: Period(1..5, run = 4)
+exception caught when loading class *:: java.lang.AssertionError: assertion failed: denotation class WithPureFuns invalid in run 3. ValidFor: Period(1..5, run = 4)
+exception caught when loading class Tuple2$mcZI$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcZI$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcDJ$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcCC$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcCC$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcDJ$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product1$mcI$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading trait Product1$mcD$sp: java.lang.AssertionError: assertion failed: denotation module class Product1$mcD$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcJZ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcJZ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcCZ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcCZ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcIC$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcIC$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcII$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcII$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product1$mcJ$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class BodyParser: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+exception caught when loading trait Product2$mcJJ$sp: java.lang.AssertionError: assertion failed: denotation module class Product2$mcJJ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcDI$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcZC$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcZC$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcJJ$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcDI$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcIJ$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple1$mcI$sp: java.lang.AssertionError: assertion failed: denotation trait Product1 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcIJ$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcID$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcID$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcCJ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcCJ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcDC$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcDC$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcJI$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcJD$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading trait Product2$mcJD$sp: java.lang.AssertionError: assertion failed: denotation module class Product2$mcJD$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcJI$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcDZ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcDZ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcCI$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcCI$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcZZ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcZZ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcIZ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcIZ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcCD$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcCD$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcDD$sp: java.lang.AssertionError: assertion failed: denotation trait Product2 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcJC$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcJC$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple1$mcD$sp: java.lang.AssertionError: assertion failed: denotation trait Product1 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcZJ$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcZJ$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class IndexedSeqOps: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+exception caught when loading class Tuple1$mcJ$sp: java.lang.AssertionError: assertion failed: denotation trait Product1 invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Product2$mcDD$sp: java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+exception caught when loading class Tuple2$mcZD$sp: java.lang.AssertionError: assertion failed: denotation module class Tuple2$mcZD$sp$ invalid in run 3. ValidFor: Period(1..2, run = 4)
+Nov 11, 2024 8:55:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_08-55-14-612.md
+2024.11.11 08:55:14 WARN  javac exited with exit code -1
+2024.11.11 08:55:14 INFO  time: compiled root in 1.66s
+2024.11.11 08:55:16 INFO  compiling root (5 scala sources and 1 java source)
+java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4)
+	at scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:8)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.updateValidity(Denotations.scala:717)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.bringForward(Denotations.scala:742)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.toNewRun$1(Denotations.scala:799)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.current(Denotations.scala:870)
+	at dotty.tools.dotc.core.Symbols$Symbol.recomputeDenot(Symbols.scala:120)
+	at dotty.tools.dotc.core.Symbols$Symbol.computeDenot(Symbols.scala:114)
+	at dotty.tools.dotc.core.Symbols$Symbol.denot(Symbols.scala:107)
+	at dotty.tools.dotc.core.Symbols$.toDenot(Symbols.scala:494)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.updateValidity(Denotations.scala:716)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.bringForward(Denotations.scala:742)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.toNewRun$1(Denotations.scala:799)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.current(Denotations.scala:870)
+	at dotty.tools.dotc.core.Types$NamedType.computeDenot(Types.scala:2364)
+	at dotty.tools.dotc.core.Types$NamedType.denot(Types.scala:2324)
+	at dotty.tools.dotc.core.Types$NamedType.computeSymbol(Types.scala:2281)
+	at dotty.tools.dotc.core.Types$NamedType.symbol(Types.scala:2274)
+	at dotty.tools.dotc.core.Types$Type.classSymbol(Types.scala:507)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.traverse$1(SymDenotations.scala:1966)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.computeBaseData(SymDenotations.scala:1973)
+	at dotty.tools.dotc.core.SymDenotations$BaseDataImpl.apply(SymDenotations.scala:2960)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.baseData(SymDenotations.scala:1939)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.baseClassSet(SymDenotations.scala:1955)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.derivesFrom(SymDenotations.scala:1981)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.isValueClass(SymDenotations.scala:2019)
+	at dotty.tools.dotc.transform.ValueClasses$.isDerivedValueClass(ValueClasses.scala:19)
+	at dotty.tools.dotc.core.TypeErasure$.dotty$tools$dotc$core$TypeErasure$$$erasureDependsOnArgs(TypeErasure.scala:75)
+	at dotty.tools.dotc.core.TypeErasure.dotty$tools$dotc$core$TypeErasure$$sigName(TypeErasure.scala:870)
+	at dotty.tools.dotc.core.TypeErasure$.sigName(TypeErasure.scala:204)
+	at dotty.tools.dotc.core.Signature$.apply(Signature.scala:167)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.computeSignature$2(Types.scala:3727)
+	at dotty.tools.dotc.core.Types$MethodOrPoly.signature(Types.scala:3752)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.signature(Denotations.scala:617)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.matchesLoosely(Denotations.scala:1023)
+	at dotty.tools.dotc.core.Denotations$SingleDenotation.matches(Denotations.scala:1007)
+	at dotty.tools.dotc.core.Denotations$Denotation.mergeDenot$1(Denotations.scala:409)
+	at dotty.tools.dotc.core.Denotations$Denotation.meet(Denotations.scala:499)
+	at dotty.tools.dotc.core.Denotations$DenotUnion.toDenot(Denotations.scala:1229)
+	at dotty.tools.dotc.core.Denotations$DenotUnion.toDenot(Denotations.scala:1229)
+	at dotty.tools.dotc.core.SymDenotations$ClassDenotation.findMember(SymDenotations.scala:2145)
+	at dotty.tools.dotc.core.Types$Type.go$1(Types.scala:695)
+	at dotty.tools.dotc.core.Types$Type.findMember(Types.scala:874)
+	at dotty.tools.dotc.core.Types$Type.memberBasedOnFlags(Types.scala:678)
+	at dotty.tools.dotc.core.Types$Type.member(Types.scala:662)
+	at dotty.tools.dotc.typer.ProtoTypes$SelectionProto.liftedTree1$1(ProtoTypes.scala:206)
+	at dotty.tools.dotc.typer.ProtoTypes$SelectionProto.isMatchedBy(ProtoTypes.scala:228)
+	at dotty.tools.dotc.core.TypeComparer.isMatchedByProto(TypeComparer.scala:2055)
+	at dotty.tools.dotc.core.TypeComparer.firstTry$1(TypeComparer.scala:339)
+	at dotty.tools.dotc.core.TypeComparer.recur(TypeComparer.scala:1469)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:208)
+	at dotty.tools.dotc.core.TypeComparer.isSubType(TypeComparer.scala:218)
+	at dotty.tools.dotc.core.TypeComparer.topLevelSubType(TypeComparer.scala:128)
+	at dotty.tools.dotc.core.TypeComparer.testSubType(TypeComparer.scala:144)
+	at dotty.tools.dotc.core.TypeComparer$.testSubType(TypeComparer.scala:2955)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgsOther$1(Typer.scala:3980)
+	at dotty.tools.dotc.typer.Typer.adaptNoArgs$1(Typer.scala:4062)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:4268)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3587)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3184)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3188)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3300)
+	at dotty.tools.dotc.typer.Typer.typeSelectOnTerm$1(Typer.scala:752)
+	at dotty.tools.dotc.typer.Typer.typedSelect(Typer.scala:790)
+	at dotty.tools.dotc.typer.Typer.tryApply$1(Typer.scala:3387)
+	at dotty.tools.dotc.typer.Typer.tryInsertApplyOrImplicit$$anonfun$2(Typer.scala:3418)
+	at dotty.tools.dotc.typer.Typer.tryEither(Typer.scala:3324)
+	at dotty.tools.dotc.typer.Typer.tryInsertApplyOrImplicit(Typer.scala:3425)
+	at dotty.tools.dotc.typer.Typer.adaptToArgs$1(Typer.scala:3707)
+	at dotty.tools.dotc.typer.Typer.adapt1(Typer.scala:4263)
+	at dotty.tools.dotc.typer.Typer.adapt(Typer.scala:3587)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3184)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3188)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3300)
+	at dotty.tools.dotc.typer.Applications.realApply$1(Applications.scala:941)
+	at dotty.tools.dotc.typer.Applications.typedApply(Applications.scala:1101)
+	at dotty.tools.dotc.typer.Applications.typedApply$(Applications.scala:352)
+	at dotty.tools.dotc.typer.Typer.typedApply(Typer.scala:116)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:3048)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3112)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3184)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3188)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3300)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr$$anonfun$1(Namer.scala:1653)
+	at dotty.tools.dotc.typer.Namer.typedAhead(Namer.scala:1643)
+	at dotty.tools.dotc.typer.Namer.typedAheadExpr(Namer.scala:1653)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1$$anonfun$1(Namer.scala:1906)
+	at dotty.tools.dotc.inlines.PrepareInlineable$.dropInlineIfError(PrepareInlineable.scala:243)
+	at dotty.tools.dotc.typer.Namer.typedAheadRhs$1(Namer.scala:1906)
+	at dotty.tools.dotc.typer.Namer.rhsType$1(Namer.scala:1914)
+	at dotty.tools.dotc.typer.Namer.cookedRhsType$1(Namer.scala:1932)
+	at dotty.tools.dotc.typer.Namer.lhsType$1(Namer.scala:1933)
+	at dotty.tools.dotc.typer.Namer.inferredResultType(Namer.scala:1944)
+	at dotty.tools.dotc.typer.Namer.inferredType$1(Namer.scala:1691)
+	at dotty.tools.dotc.typer.Namer.valOrDefDefSig(Namer.scala:1698)
+	at dotty.tools.dotc.typer.Namer.defDefSig(Namer.scala:1789)
+	at dotty.tools.dotc.typer.Namer$Completer.typeSig(Namer.scala:791)
+	at dotty.tools.dotc.typer.Namer$Completer.completeInCreationContext(Namer.scala:934)
+	at dotty.tools.dotc.typer.Namer$Completer.complete(Namer.scala:814)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.completeFrom(SymDenotations.scala:174)
+	at dotty.tools.dotc.core.Denotations$Denotation.completeInfo$1(Denotations.scala:187)
+	at dotty.tools.dotc.core.Denotations$Denotation.info(Denotations.scala:189)
+	at dotty.tools.dotc.core.SymDenotations$SymDenotation.ensureCompleted(SymDenotations.scala:393)
+	at dotty.tools.dotc.typer.Typer.retrieveSym(Typer.scala:2989)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:3014)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3111)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3184)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3188)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3210)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3256)
+	at dotty.tools.dotc.typer.Typer.typedClassDef(Typer.scala:2669)
+	at dotty.tools.dotc.typer.Typer.typedTypeOrClassDef$1(Typer.scala:3036)
+	at dotty.tools.dotc.typer.Typer.typedNamed$1(Typer.scala:3040)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3111)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3184)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3188)
+	at dotty.tools.dotc.typer.Typer.traverse$1(Typer.scala:3210)
+	at dotty.tools.dotc.typer.Typer.typedStats(Typer.scala:3256)
+	at dotty.tools.dotc.typer.Typer.typedPackageDef(Typer.scala:2812)
+	at dotty.tools.dotc.typer.Typer.typedUnnamed$1(Typer.scala:3081)
+	at dotty.tools.dotc.typer.Typer.typedUnadapted(Typer.scala:3112)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3184)
+	at dotty.tools.dotc.typer.Typer.typed(Typer.scala:3188)
+	at dotty.tools.dotc.typer.Typer.typedExpr(Typer.scala:3300)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$1(TyperPhase.scala:44)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck$$anonfun$adapted$1(TyperPhase.scala:54)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:440)
+	at dotty.tools.dotc.typer.TyperPhase.typeCheck(TyperPhase.scala:54)
+	at dotty.tools.dotc.typer.TyperPhase.runOn$$anonfun$3(TyperPhase.scala:88)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.typer.TyperPhase.runOn(TyperPhase.scala:88)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:246)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:262)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:270)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:279)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:67)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:279)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:194)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	at scala.meta.internal.pc.WithCompilationUnit.<init>(WithCompilationUnit.scala:28)
+	at scala.meta.internal.pc.WithSymbolSearchCollector.<init>(PcCollector.scala:362)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider.<init>(PcDocumentHighlightProvider.scala:16)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.documentHighlight$$anonfun$1(ScalaPresentationCompiler.scala:187)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:156)
+	at scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:142)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:245)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+no sig for AppliedType(TypeRef(TermRef(ThisType(TypeRef(NoPrefix,module class api)),object mvc),Action),List(TypeRef(TermRef(ThisType(TypeRef(NoPrefix,module class api)),object mvc),AnyContent))) because of ()
+java.lang.IndexOutOfBoundsException: 0 is out of bounds (min 0, max -1) while typechecking /Users/stsagarino/Desktop/sht/Main.scala
+java.lang.AssertionError: assertion failed: denotation class Object invalid in run 3. ValidFor: Period(1..2, run = 4) while typechecking /Users/stsagarino/Desktop/sht/api/app/controllers/HabitController.scala
+Nov 11, 2024 8:55:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_08-55-16-555.md
+Nov 11, 2024 8:55:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_08-55-16-558.md
+2024.11.11 08:55:18 WARN  javac exited with exit code -1
+2024.11.11 08:55:18 INFO  time: compiled root in 2.08s
+2024.11.11 08:55:25 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:55:25 WARN  javac exited with exit code -1
+2024.11.11 08:55:25 INFO  time: compiled root in 0.58s
+2024.11.11 08:55:25 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:55:26 WARN  javac exited with exit code -1
+2024.11.11 08:55:26 INFO  time: compiled root in 0.76s
+2024.11.11 08:55:47 INFO  compiling root (5 scala sources and 1 java source)
+2024.11.11 08:55:50 WARN  javac exited with exit code -1
+2024.11.11 08:55:50 INFO  time: compiled root in 2.15s
+2024.11.11 08:57:17 INFO  compiling root (6 scala sources and 1 java source)
+2024.11.11 08:57:17 INFO  file:///Users/stsagarino/Desktop/sht/api/app/controllers/HabitController.scala:1:1: stale bloop error: Illegal start of toplevel definition
+HabitController.scala
+^^^^^^^^^^^^^^^
+2024.11.11 08:57:17 INFO  file:///Users/stsagarino/Desktop/sht/api/app/controllers/HabitController.scala:1:1: stale bloop error: Illegal start of toplevel definition
+HabitController.scala
+^^^^^^^^^^^^^^^
+2024.11.11 08:57:18 INFO  time: compiled root in 1.03s
+2024.11.11 08:57:18 INFO  compiling root (6 scala sources and 1 java source)
+2024.11.11 08:57:19 WARN  javac exited with exit code -1
+2024.11.11 08:57:19 INFO  time: compiled root in 1s
+2024.11.11 08:57:22 INFO  compiling root (6 scala sources and 1 java source)
+2024.11.11 08:57:22 INFO  time: compiled root in 0.34s
+2024.11.11 08:57:27 INFO  compiling root (6 scala sources and 1 java source)
+2024.11.11 08:57:30 WARN  javac exited with exit code -1
+2024.11.11 08:57:30 INFO  time: compiled root in 2.71s
+2024.11.11 08:57:55 INFO  compiling root (6 scala sources and 1 java source)
+2024.11.11 08:57:57 WARN  javac exited with exit code -1
+2024.11.11 08:57:57 INFO  time: compiled root in 2.15s
+2024.11.11 08:57:59 INFO  compiling root (6 scala sources and 1 java source)
+2024.11.11 08:58:01 WARN  javac exited with exit code -1
+2024.11.11 08:58:01 INFO  time: compiled root in 2.13s
+2024.11.11 08:58:43 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 08:58:43 INFO  time: compiled root in 0.68s
+2024.11.11 08:58:43 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 08:58:44 INFO  time: compiled root in 0.39s
+2024.11.11 08:58:47 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 08:58:47 WARN  javac exited with exit code -1
+2024.11.11 08:58:47 INFO  time: compiled root in 0.81s
+2024.11.11 09:00:09 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:00:09 INFO  time: compiled root in 0.74s
+Nov 11, 2024 9:00:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_09-00-12-766.md
+Nov 11, 2024 9:00:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_09-00-14-642.md
+2024.11.11 09:00:22 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:00:22 WARN  javac exited with exit code -1
+2024.11.11 09:00:22 INFO  time: compiled root in 0.69s
+2024.11.11 09:00:45 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:00:45 WARN  javac exited with exit code -1
+2024.11.11 09:00:45 INFO  time: compiled root in 0.69s
+Nov 11, 2024 9:00:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 599
+Nov 11, 2024 9:00:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 601
+2024.11.11 09:01:17 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:01:17 INFO  time: compiled root in 0.34s
+2024.11.11 09:01:20 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:01:20 WARN  javac exited with exit code -1
+2024.11.11 09:01:20 INFO  time: compiled root in 0.61s
+2024.11.11 09:02:14 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:02:16 WARN  javac exited with exit code -1
+2024.11.11 09:02:16 INFO  time: compiled root in 1.4s
