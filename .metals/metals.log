@@ -1241,3 +1241,261 @@ WARNING: Unmatched cancel notification for request id 6263
 2024.11.11 09:53:41 INFO  compiling root (9 scala sources and 1 java source)
 2024.11.11 09:53:44 WARN  javac exited with exit code -1
 2024.11.11 09:53:44 INFO  time: compiled root in 3.04s
+2024.11.11 09:54:58 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.11 09:55:00 WARN  javac exited with exit code -1
+2024.11.11 09:55:00 INFO  time: compiled root in 1.86s
+2024.11.11 09:55:27 INFO  running '/Users/stsagarino/.asdf/installs/java/corretto-21.0.4.7.1/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/3k/q46d751n54dgkdd_z5m2rk4h0000gp/T/metals2506793101447221980/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.11.11 09:55:30 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.11 09:55:32 INFO  [info] welcome to sbt 1.10.3 (Amazon.com Inc. Java 21.0.4)
+2024.11.11 09:55:33 WARN  javac exited with exit code -1
+2024.11.11 09:55:33 INFO  time: compiled root in 2.86s
+2024.11.11 09:55:33 INFO  [info] loading settings for project api-build-build-build from metals.sbt ...
+2024.11.11 09:55:35 INFO  [info] loading project definition from /Users/stsagarino/Desktop/sht/api/project/project/project
+2024.11.11 09:55:37 INFO  [info] loading settings for project api-build-build from metals.sbt ...
+2024.11.11 09:55:37 INFO  [info] loading project definition from /Users/stsagarino/Desktop/sht/api/project/project
+2024.11.11 09:55:42 INFO  [success] Generated .bloop/api-build-build.json
+2024.11.11 09:55:42 INFO  [success] Total time: 6 s, completed Nov 11, 2024, 9:55:43 AM
+2024.11.11 09:55:44 INFO  [info] loading settings for project api-build from metals.sbt,plugins.sbt ...
+2024.11.11 09:55:44 INFO  [info] loading project definition from /Users/stsagarino/Desktop/sht/api/project
+2024.11.11 09:55:47 INFO  [success] Generated .bloop/api-build.json
+2024.11.11 09:55:47 INFO  [success] Total time: 3 s, completed Nov 11, 2024, 9:55:48 AM
+2024.11.11 09:55:49 INFO  [info] loading settings for project root from build.sbt ...
+2024.11.11 09:55:49 INFO  [info]   __              __
+2024.11.11 09:55:49 INFO  [info]   \ \     ____   / /____ _ __  __
+2024.11.11 09:55:49 INFO  [info]    \ \   / __ \ / // __ `// / / /
+2024.11.11 09:55:49 INFO  [info]    / /  / /_/ // // /_/ // /_/ /
+2024.11.11 09:55:49 INFO  [info]   /_/  / .___//_/ \__,_/ \__, /
+2024.11.11 09:55:49 INFO  [info]       /_/               /____/
+2024.11.11 09:55:49 INFO  [info] 
+2024.11.11 09:55:49 INFO  [info] Version 3.0.5 running Java 21.0.4
+2024.11.11 09:55:49 INFO  [info] 
+2024.11.11 09:55:49 INFO  [info] Play is run entirely by the community. Please consider contributing and/or donating:
+2024.11.11 09:55:49 INFO  [info] https://www.playframework.com/sponsors
+2024.11.11 09:55:49 INFO  [info] 
+2024.11.11 09:55:53 INFO  [success] Generated .bloop/root.json
+2024.11.11 09:55:53 INFO  [success] Generated .bloop/root-test.json
+2024.11.11 09:55:53 INFO  [success] Total time: 3 s, completed Nov 11, 2024, 9:55:53 AM
+2024.11.11 09:55:53 INFO  time: ran 'sbt bloopInstall' in 25s
+2024.11.11 09:55:53 INFO  Disconnecting from Bloop session...
+2024.11.11 09:55:53 INFO  Shut down connection with build server.
+2024.11.11 09:55:53 INFO  Attempting to connect to the build server...
+2024.11.11 09:55:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/stsagarino/Desktop/sht/.metals/bsp.trace.json or /Users/stsagarino/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.11.11 09:55:54 INFO  time: Connected to build server in 0.27s
+2024.11.11 09:55:54 INFO  Connected to Build server: Bloop v1.6.0
+2024.11.11 09:55:54 INFO  time: Imported build in 0.12s
+2024.11.11 09:55:54 INFO  running doctor check
+2024.11.11 09:55:54 INFO  java targets: root-test, root
+2024.11.11 09:56:06 INFO  time: indexed workspace in 11s
+2024.11.11 09:56:06 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.11 09:56:09 WARN  javac exited with exit code -1
+2024.11.11 09:56:09 INFO  time: compiled root in 3.48s
+2024.11.11 09:57:09 INFO  compiling root (9 scala sources and 1 java source)
+2024.11.11 09:57:11 INFO  time: compiled root in 1.56s
+2024.11.11 09:58:20 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:58:22 INFO  time: compiled root in 2.75s
+2024.11.11 09:58:37 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:58:38 WARN  Invalid text document uri received from build server: file:///Users/stsagarino/Desktop/sht/api/app/utils/status.scala
+2024.11.11 09:58:38 INFO  time: compiled root in 1.45s
+2024.11.11 09:58:38 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:58:39 INFO  time: compiled root in 1.41s
+2024.11.11 09:58:43 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:58:45 INFO  time: compiled root in 1.3s
+2024.11.11 09:58:45 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:58:47 INFO  time: compiled root in 1.98s
+2024.11.11 09:58:58 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:58:59 INFO  time: compiled root in 1.08s
+2024.11.11 09:59:01 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:02 INFO  time: compiled root in 1.23s
+2024.11.11 09:59:13 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:14 INFO  time: compiled root in 1.2s
+2024.11.11 09:59:19 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:20 INFO  time: compiled root in 1.5s
+Nov 11, 2024 9:59:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6723
+Nov 11, 2024 9:59:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6726
+2024.11.11 09:59:32 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:33 INFO  time: compiled root in 1.2s
+2024.11.11 09:59:33 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:35 INFO  time: compiled root in 1.3s
+2024.11.11 09:59:36 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:38 INFO  time: compiled root in 1.39s
+2024.11.11 09:59:48 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:49 INFO  time: compiled root in 1.09s
+2024.11.11 09:59:54 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 09:59:56 INFO  time: compiled root in 1.24s
+2024.11.11 10:00:01 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:03 INFO  time: compiled root in 1.98s
+Nov 11, 2024 10:00:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_10-00-09-719.md
+2024.11.11 10:00:11 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:12 INFO  time: compiled root in 1.01s
+2024.11.11 10:00:14 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:15 INFO  time: compiled root in 1.1s
+2024.11.11 10:00:15 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:16 INFO  time: compiled root in 1.47s
+2024.11.11 10:00:34 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:36 INFO  time: compiled root in 1.44s
+2024.11.11 10:00:47 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:49 INFO  time: compiled root in 1.85s
+2024.11.11 10:00:51 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:00:52 INFO  time: compiled root in 1.51s
+2024.11.11 10:01:07 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:08 INFO  time: compiled root in 1.17s
+2024.11.11 10:01:10 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:11 INFO  time: compiled root in 1.11s
+2024.11.11 10:01:38 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:41 INFO  time: compiled root in 2.21s
+2024.11.11 10:01:43 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:44 INFO  time: compiled root in 1.16s
+2024.11.11 10:01:49 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:50 INFO  time: compiled root in 1.06s
+2024.11.11 10:01:50 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:52 INFO  time: compiled root in 1.42s
+2024.11.11 10:01:56 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:01:57 INFO  time: compiled root in 1.03s
+Nov 11, 2024 10:02:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7138
+2024.11.11 10:02:28 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:02:29 INFO  time: compiled root in 1.1s
+2024.11.11 10:02:29 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:02:31 INFO  time: compiled root in 1.39s
+Nov 11, 2024 10:02:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7219
+2024.11.11 10:02:43 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:02:44 INFO  time: compiled root in 1.23s
+2024.11.11 10:02:47 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:02:48 INFO  time: compiled root in 1.1s
+2024.11.11 10:02:52 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:02:54 WARN  javac exited with exit code -1
+2024.11.11 10:02:54 INFO  time: compiled root in 1.73s
+2024.11.11 10:03:14 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:03:15 INFO  time: compiled root in 1.2s
+2024.11.11 10:04:53 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:04:54 WARN  javac exited with exit code -1
+2024.11.11 10:04:54 INFO  time: compiled root in 1.17s
+2024.11.11 10:05:55 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:05:56 WARN  javac exited with exit code -1
+2024.11.11 10:05:56 INFO  time: compiled root in 1.28s
+2024.11.11 10:06:14 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:06:16 WARN  javac exited with exit code -1
+2024.11.11 10:06:16 INFO  time: compiled root in 1.59s
+2024.11.11 10:06:30 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:06:30 INFO  time: compiled root in 0.45s
+2024.11.11 10:06:42 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:06:43 WARN  javac exited with exit code -1
+2024.11.11 10:06:43 INFO  time: compiled root in 1.22s
+Nov 11, 2024 10:06:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7542
+2024.11.11 10:06:58 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:06:59 WARN  javac exited with exit code -1
+2024.11.11 10:06:59 INFO  time: compiled root in 1.08s
+2024.11.11 10:07:21 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:07:21 INFO  time: compiled root in 0.59s
+2024.11.11 10:07:21 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:07:22 INFO  time: compiled root in 0.5s
+2024.11.11 10:07:27 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:07:27 INFO  time: compiled root in 0.59s
+2024.11.11 10:07:37 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:07:42 WARN  javac exited with exit code -1
+2024.11.11 10:07:42 INFO  time: compiled root in 4.49s
+Nov 11, 2024 10:07:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7772
+2024.11.11 10:07:58 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:00 WARN  javac exited with exit code -1
+2024.11.11 10:08:00 INFO  time: compiled root in 1.16s
+2024.11.11 10:08:03 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:04 INFO  time: compiled root in 1.86s
+2024.11.11 10:08:11 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:11 INFO  time: compiled root in 0.45s
+2024.11.11 10:08:11 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:13 INFO  time: compiled root in 0.47s
+2024.11.11 10:08:23 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:24 INFO  time: compiled root in 1.24s
+2024.11.11 10:08:27 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:28 INFO  time: compiled root in 1.35s
+2024.11.11 10:08:44 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:47 INFO  time: compiled root in 2.28s
+2024.11.11 10:08:50 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:08:52 INFO  time: compiled root in 2.15s
+2024.11.11 10:08:59 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:09:02 INFO  time: compiled root in 2.78s
+2024.11.11 10:09:12 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:09:14 INFO  time: compiled root in 2.2s
+2024.11.11 10:09:23 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:09:25 INFO  time: compiled root in 1.98s
+Nov 11, 2024 10:09:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8124
+Nov 11, 2024 10:09:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8171
+Nov 11, 2024 10:09:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8175
+2024.11.11 10:09:40 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:09:42 INFO  time: compiled root in 1.94s
+2024.11.11 10:10:31 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:10:33 INFO  time: compiled root in 1.89s
+2024.11.11 10:11:18 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:11:20 INFO  time: compiled root in 2.64s
+2024.11.11 10:11:24 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:11:37 INFO  time: compiled root in 12s
+2024.11.11 10:11:50 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:11:52 INFO  time: compiled root in 2.43s
+2024.11.11 10:11:55 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:12:00 INFO  time: compiled root in 5.23s
+Nov 11, 2024 10:12:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8370
+2024.11.11 10:12:58 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:12:59 INFO  time: compiled root in 1.58s
+2024.11.11 10:13:02 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:04 INFO  time: compiled root in 2.19s
+2024.11.11 10:13:22 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:24 INFO  time: compiled root in 1.24s
+2024.11.11 10:13:26 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:27 INFO  time: compiled root in 1.2s
+2024.11.11 10:13:38 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:39 INFO  time: compiled root in 1.27s
+2024.11.11 10:13:39 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:41 INFO  time: compiled root in 1.39s
+2024.11.11 10:13:41 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:44 INFO  time: compiled root in 1.51s
+2024.11.11 10:13:44 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:45 INFO  time: compiled root in 1.27s
+2024.11.11 10:13:45 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:47 INFO  time: compiled root in 1.39s
+2024.11.11 10:13:47 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:48 INFO  time: compiled root in 1.35s
+2024.11.11 10:13:56 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:13:57 INFO  time: compiled root in 1.39s
+Nov 11, 2024 10:14:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8627
+2024.11.11 10:14:04 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:14:04 INFO  time: compiled root in 0.82s
+2024.11.11 10:14:29 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:14:29 INFO  time: compiled root in 0.51s
+2024.11.11 10:15:47 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:15:47 INFO  time: compiled root in 0.91s
+Nov 11, 2024 10:16:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8831
+Nov 11, 2024 10:16:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8859
+Nov 11, 2024 10:16:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8923
+2024.11.11 10:16:14 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:16:14 INFO  time: compiled root in 0.8s
+2024.11.11 10:16:21 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:16:21 INFO  time: compiled root in 0.98s
+2024.11.11 10:17:13 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:17:14 WARN  javac exited with exit code -1
+2024.11.11 10:17:14 INFO  time: compiled root in 1.28s
+2024.11.11 10:17:32 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:17:34 WARN  javac exited with exit code -1
+2024.11.11 10:17:34 INFO  time: compiled root in 1.38s
+2024.11.11 10:17:38 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:17:39 WARN  javac exited with exit code -1
+2024.11.11 10:17:39 INFO  time: compiled root in 1.33s
+2024.11.11 10:17:39 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:17:41 WARN  javac exited with exit code -1
+2024.11.11 10:17:41 INFO  time: compiled root in 1.72s
+2024.11.11 10:17:41 INFO  compiling root (10 scala sources and 1 java source)
+2024.11.11 10:17:43 WARN  javac exited with exit code -1
+2024.11.11 10:17:43 INFO  time: compiled root in 1.22s
