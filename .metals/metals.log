@@ -524,3 +524,53 @@ WARNING: Unmatched cancel notification for request id 601
 2024.11.11 09:02:14 INFO  compiling root (7 scala sources and 1 java source)
 2024.11.11 09:02:16 WARN  javac exited with exit code -1
 2024.11.11 09:02:16 INFO  time: compiled root in 1.4s
+2024.11.11 09:02:40 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:02:42 WARN  javac exited with exit code -1
+2024.11.11 09:02:42 INFO  time: compiled root in 1.49s
+2024.11.11 09:02:50 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:02:50 WARN  javac exited with exit code -1
+2024.11.11 09:02:50 INFO  time: compiled root in 0.83s
+2024.11.11 09:02:52 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:02:53 WARN  javac exited with exit code -1
+2024.11.11 09:02:53 INFO  time: compiled root in 1.17s
+2024.11.11 09:03:41 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:03:41 WARN  javac exited with exit code -1
+2024.11.11 09:03:41 INFO  time: compiled root in 0.71s
+2024.11.11 09:03:42 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:03:44 WARN  javac exited with exit code -1
+2024.11.11 09:03:44 INFO  time: compiled root in 1.54s
+Nov 11, 2024 9:03:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_09-03-58-168.md
+Nov 11, 2024 9:03:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_09-03-59-153.md
+Nov 11, 2024 9:03:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/stsagarino/Desktop/sht/.metals/.reports/metals-full/2024-11-11/r_compiler-error_(root)_09-03-59-467.md
+2024.11.11 09:04:07 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:04:07 INFO  time: compiled root in 0.44s
+2024.11.11 09:04:12 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:04:12 INFO  time: compiled root in 0.41s
+2024.11.11 09:04:19 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:04:20 WARN  javac exited with exit code -1
+2024.11.11 09:04:20 INFO  time: compiled root in 1.26s
+2024.11.11 09:04:59 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:04:59 WARN  javac exited with exit code -1
+2024.11.11 09:04:59 INFO  time: compiled root in 0.81s
+Nov 11, 2024 9:05:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1428
+2024.11.11 09:05:32 INFO  compiling root (7 scala sources and 1 java source)
+2024.11.11 09:05:34 WARN  javac exited with exit code -1
+2024.11.11 09:05:34 INFO  time: compiled root in 2.43s
+2024.11.11 09:06:49 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:06:49 INFO  time: compiled root in 0.52s
+2024.11.11 09:06:49 INFO  file:///Users/stsagarino/Desktop/sht/api/app/model/repo/TaskRepo.scala:1:1: stale bloop error: Illegal start of toplevel definition
+TaskRepo.scala
+^^^^^^^^
+2024.11.11 09:06:49 INFO  file:///Users/stsagarino/Desktop/sht/api/app/model/repo/TaskRepo.scala:1:1: stale bloop error: Illegal start of toplevel definition
+TaskRepo.scala
+^^^^^^^^
+2024.11.11 09:06:49 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:06:50 WARN  javac exited with exit code -1
+2024.11.11 09:06:50 INFO  time: compiled root in 0.83s
+2024.11.11 09:06:51 INFO  compiling root (8 scala sources and 1 java source)
+2024.11.11 09:06:53 WARN  javac exited with exit code -1
+2024.11.11 09:06:53 INFO  time: compiled root in 1.73s
