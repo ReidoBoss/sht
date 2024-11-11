@@ -5,6 +5,7 @@ import domain.habit
 import utils.results._
 
 import javax.inject._
+import play.api.libs.json._
 import scala.concurrent.Future
 import domain.habit.Habit
 import java.util.{ Date,UUID }
@@ -24,7 +25,13 @@ class HabitServices @Inject() (habitRepo:HabitRepo)(using ExecutionContext) {
             case _ => ADD_HABIT_FAILED
         }
       }
-      resultMEow = Future("cat")
-    } yield resultMEow
+    } yield result
+  }
+
+  def getAll = {
+    habitRepo.getAll map {
+      case habit:Seq[Habit] => HABIT_RETRIEVE(Json.toJson(habit))
+      case null => GET_HABIT_FAILED
+    }
   }
 }

@@ -4,7 +4,7 @@ Backend Stories:
    - goal (optional)
    - is completed
    - date
-2. my habits should be displayed in the list of habits
+✅2. my habits should be displayed in the list of habits
 3. my habits should reset daily
 4. i can uncheck and uncheck my habits to know if it is completed or not
 5. display all the days that a habit was completed

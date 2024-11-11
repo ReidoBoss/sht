@@ -40,7 +40,7 @@ object Habit {
 
 }
 
-val taskForm = Form(
+val habitForm = Form(
   mapping(
     "name" -> text,
     "goal"  -> text,
