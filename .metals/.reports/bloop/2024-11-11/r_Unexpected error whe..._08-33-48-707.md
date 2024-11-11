@@ -1,0 +1,51 @@
+error id: oJjRU39J3WOFP6U5XoAS6Q==
+### Bloop error:
+
+Unexpected error when compiling root: java.io.IOException: Cannot run program "<HOME>/.asdf/installs/java/corretto-21.0.4.7.1/bin/javac" (in directory "<HOME>/Desktop/schindler-api"): error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at scala.sys.process.ProcessBuilderImpl$Simple.run(ProcessBuilderImpl.scala:75)
+	at scala.sys.process.ProcessBuilderImpl$AbstractBuilder.run(ProcessBuilderImpl.scala:106)
+	at scala.sys.process.ProcessBuilderImpl$AbstractBuilder.$anonfun$runBuffered$1(ProcessBuilderImpl.scala:154)
+	at scala.runtime.java8.JFunction0$mcI$sp.apply(JFunction0$mcI$sp.java:23)
+	at sbt.internal.inc.javac.JavacLogger.buffer(JavacProcessLogger.scala:49)
+	at scala.sys.process.ProcessBuilderImpl$AbstractBuilder.runBuffered(ProcessBuilderImpl.scala:154)
+	at scala.sys.process.ProcessBuilderImpl$AbstractBuilder.$bang(ProcessBuilderImpl.scala:120)
+	at sbt.internal.inc.javac.BloopForkedJavaUtils$.$anonfun$launch$3(BloopForkedJavaUtils.scala:34)
+	at sbt.internal.inc.javac.BloopForkedJavaUtils$.$anonfun$launch$3$adapted(BloopForkedJavaUtils.scala:28)
+	at sbt.internal.inc.javac.ForkedJava$.$anonfun$withArgumentFile$1(ForkedJava.scala:77)
+	at sbt.io.IO$.withTemporaryDirectory(IO.scala:496)
+	at sbt.io.IO$.withTemporaryDirectory(IO.scala:506)
+	at sbt.internal.inc.javac.ForkedJava$.withArgumentFile(ForkedJava.scala:74)
+	at sbt.internal.inc.javac.BloopForkedJavaUtils$.launch(BloopForkedJavaUtils.scala:28)
+	at bloop.CompilerCache$BloopForkedJavaCompiler.run(CompilerCache.scala:223)
+	at sbt.internal.inc.javac.AnalyzingJavaCompiler.$anonfun$compile$12(AnalyzingJavaCompiler.scala:172)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at sbt.internal.inc.javac.AnalyzingJavaCompiler.timed(AnalyzingJavaCompiler.scala:262)
+	at sbt.internal.inc.javac.AnalyzingJavaCompiler.compile(AnalyzingJavaCompiler.scala:161)
+	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$9(BloopHighLevelCompiler.scala:175)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$1(BloopHighLevelCompiler.scala:71)
+	at bloop.tracing.NoopTracer$.trace(BraveTracer.scala:53)
+	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.timed$1(BloopHighLevelCompiler.scala:70)
+	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$8(BloopHighLevelCompiler.scala:168)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1423)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 37 more
+#### Short summary: 
+
+Unexpected error when compiling root: java.io.IOException: Cannot run program "<HOME>/.asdf/installs...
