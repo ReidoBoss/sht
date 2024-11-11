@@ -1,6 +1,11 @@
 <template>
-  <form @submit.prevent="submit" class="habit-form">
+  <button @click="toggleForm" class="toggle-form-btn">
+    {{ showForm ? 'Hide Habit Form' : 'Add a Habit' }}
+  </button>
+
+  <form v-if="showForm" @submit.prevent="submit" class="habit-form">
     <h2 class="form-title">Add a New Habit</h2>
+
     <div class="form-group">
       <label for="habit-name" class="form-label">Habit Name</label>
       <input
@@ -21,9 +26,9 @@
         v-model="goal"
         class="form-input"
         placeholder="Enter habit goal"
-        required
       />
     </div>
+
     <button type="submit" class="submit-btn">Add Habit</button>
   </form>
 </template>
@@ -34,9 +39,14 @@
 
   const name = ref('')
   const goal = ref('')
+  const showForm = ref(false)
 
   const habitStore = useHabitStore()
-  const { add, get } = habitStore
+  const { add, get,getMyHabitToday } = habitStore
+
+  function toggleForm() {
+    showForm.value = !showForm.value
+  }
 
   async function submit() {
     const habitForm = {
@@ -48,12 +58,32 @@
     name.value = ''
   }
 
-  onMounted(() => {
-    get()
+  onMounted( async () => {
+    await get()
+    await getMyHabitToday()
   })
 </script>
 
 <style scoped>
+.toggle-form-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+}
+
+.toggle-form-btn:hover {
+  background-color: #0056b3;
+}
+
 .habit-form {
   background-color: #fff;
   border-radius: 8px;

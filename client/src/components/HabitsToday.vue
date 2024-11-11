@@ -1,10 +1,8 @@
 <template>
   <div class="habit-container">
-    <button @click="toggleHabits" class="toggle-button">
-      {{ isVisible ? 'Hide Habits' : 'Show Habits' }}
-    </button>
 
-    <div v-if="isVisible" class="habit-list">
+
+    <div class="habit-list">
       <div
         class="habit-card"
         v-for="(habit, index) in habits"
@@ -15,24 +13,28 @@
           <span v-if="habit.goal">{{ habit.goal }}</span>
           <span v-else>No goal</span>
         </p>
+
+        <input
+          type="checkbox"
+          v-model="habit.isDone"
+          @change="updateById(habit.id)"
+        >
       </div>
     </div>
   </div>
+
 </template>
 
 <script lang="ts" setup>
   import { storeToRefs } from 'pinia'
-  import { ref } from 'vue'
+  import { ref,onMounted } from 'vue'
   import useHabitStore from '@/stores/habit'
 
   const habitStore = useHabitStore()
   const { habits } = storeToRefs(habitStore)
+  const { updateById } = habitStore
 
-  const isVisible = ref(false)
 
-  function toggleHabits() {
-    isVisible.value = !isVisible.value
-  }
 </script>
 
 <style scoped>

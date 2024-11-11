@@ -1,19 +1,20 @@
 package services.habit
 
-import repo.habit.HabitRepo
-import domain.habit
+import repo.habit.{ HabitRepo, HabitHistoryRepo }
+import domain.habit._
 import utils.results._
 
 import javax.inject._
 import play.api.libs.json._
 import scala.concurrent.Future
-import domain.habit.Habit
 import java.util.{ Date,UUID }
-import java.sql.Date
 import scala.concurrent.{ ExecutionContext, Future }
 
 @Singleton
-class HabitServices @Inject() (habitRepo:HabitRepo)(using ExecutionContext) {
+class HabitServices @Inject()(
+  habitRepo: HabitRepo,
+  historyRepo: HabitHistoryRepo
+)(using ExecutionContext) {
 
   def add ( habit:Habit ) = {
     for {
@@ -34,4 +35,31 @@ class HabitServices @Inject() (habitRepo:HabitRepo)(using ExecutionContext) {
       case null => GET_HABIT_FAILED
     }
   }
+
+  def getByDate(date:Date) = {
+    historyRepo.getByDate(date) map {
+      case history: Seq[HabitHistory] => HABIT_HISTORY_RETRIEVE(Json.toJson(history))
+      case null => GET_HABIT_FAILED
+    }
+  }
+
+  def updateTodaysHabitById(id:UUID) = {
+    for {
+      idNow <- historyRepo.getById(id)
+      result <- idNow match {
+        case Some(history) => historyRepo.updateById(id,!history.isDone) map {
+          case 1 => UPDATED_HABIT
+          case _ => UPDATE_HABIT_FAILED
+        }
+        case None =>  {
+          val newHistory = HabitHistory(id,true,new Date())
+          historyRepo.add(newHistory) map {
+            case 1 => UPDATED_HABIT
+            case _ => UPDATE_HABIT_FAILED
+          }
+        }
+      }
+    } yield result
+  }
+
 }

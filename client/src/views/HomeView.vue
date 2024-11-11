@@ -1,18 +1,22 @@
 <script setup lang="ts">
   import HabitForm from '@/components/HabitForm.vue'
   import HabitContainer from '@/components/HabitContainer.vue'
+  import HabitsToday from '@/components/HabitsToday.vue'
 </script>
 
 <template>
   <div class="container">
+    <section class="habit-list-section">
+      <h2 class="section-title">Your Current Habits</h2>
+      <HabitContainer />
+    </section>
     <section class="habit-form-section">
       <h2 class="section-title">Add a New Habit</h2>
       <HabitForm />
     </section>
-
-    <section class="habit-list-section">
-      <h2 class="section-title">Your Habits</h2>
-      <HabitContainer />
+    <section class="habit-form-section">
+      <h2 class="section-title">Your Habits today</h2>
+      <HabitsToday/>
     </section>
   </div>
 </template>

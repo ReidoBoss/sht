@@ -1,4 +1,6 @@
 GET     /                           controllers.HomeController.index()
 GET     /habits                     controllers.HabitController.getAll
+GET     /habits/today               controllers.HabitController.getToday
 POST    /habit                      controllers.HabitController.add
 
+PUT     /habit/today                controllers.HabitController.updateById

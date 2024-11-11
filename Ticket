@@ -12,7 +12,7 @@ Backend Stories:
 7. as a user i can delete a habit
 
 UI Stories:
-1. as a user i can see a form to add a new habit with fields for name and goal
+✅1. as a user i can see a form to add a new habit with fields for name and goal
 2. as a user i can see a list of habits with their name, goal and a checkbox to mark them as completed for the day.
 3. count of days the habit has been completed
 4. count of streak the current habit has

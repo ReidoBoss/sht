@@ -18,7 +18,14 @@ def ADD_HABIT(id:UUID) = makeResult(
   Some(Json.obj("message" -> "Added!","id"->id.toString()))
 )
 
+def UPDATED_HABIT = makeResult(
+  Ok,
+  Some(Json.obj("message" -> "updated"))
+)
+
 def HABIT_RETRIEVE(json:JsValue) = makeResult( Ok, Some(json) )
+
+def HABIT_HISTORY_RETRIEVE(json:JsValue) = makeResult( Ok, Some(json) )
 
 val HABIT_ALREADY_EXIST = makeResult(
   Created,
@@ -26,6 +33,11 @@ val HABIT_ALREADY_EXIST = makeResult(
 )
 
 val ADD_HABIT_FAILED = makeResult(
+  Conflict,
+  Some(Json.obj("message" -> "Adding a habit failed"))
+)
+
+val UPDATE_HABIT_FAILED = makeResult(
   Conflict,
   Some(Json.obj("message" -> "Adding a habit failed"))
 )

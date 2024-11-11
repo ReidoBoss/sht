@@ -39,16 +39,25 @@ object Habit {
 val habitForm = Form(
   mapping(
     "name" -> nonEmptyText,
-    "goal"  -> nonEmptyText
+    "goal"  -> text
   )(Habit.apply)(Habit.unapply)
 )
 
-case class HabitHistory(
+case class HabitHistory (
   idHabit:UUID,
-  date:Date
+  isDone:Boolean,
+  date:Date = new Date()
 )
 
 object HabitHistory {
+  def apply(  idHabit:UUID, isDone:Boolean) = new HabitHistory(idHabit,isDone)
+  def unapply(history:HabitHistory) = Some((history.idHabit,history.isDone))
   given Format[HabitHistory] = Json.format[HabitHistory]
 }
 
+val habitHistoryForm = Form (
+  mapping(
+    "idHabit" -> uuid,
+    "isDone" -> boolean
+  )(HabitHistory.apply)(HabitHistory.unapply)
+)
