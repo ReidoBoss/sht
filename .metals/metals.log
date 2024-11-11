@@ -1692,3 +1692,6 @@ SEVERE: A severe compiler error occurred, full details of the error can be found
 2024.11.11 10:41:02 INFO  compiling root (10 scala sources and 1 java source)
 2024.11.11 10:41:04 WARN  javac exited with exit code -1
 2024.11.11 10:41:04 INFO  time: compiled root in 1.92s
+2024.11.11 10:43:21 INFO  Shutting down server
+2024.11.11 10:43:21 INFO  shutting down Metals
+2024.11.11 10:43:21 INFO  Shut down connection with build server.
